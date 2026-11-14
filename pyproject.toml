@@ -10,7 +10,7 @@ requires-python = ">=3.10"
 dependencies = ["numpy>=1.26,<3"]
 
 [project.optional-dependencies]
-chemistry = ["rdkit==2026.9.1", "posebusters==0.5.1"]
+chemistry = ["rdkit==2026.9.1", "posebusters==0.5.1", "numpy==1.26.4"]
 templ = ["rdkit==2024.9.6", "numpy==1.26.4"]
 
 [tool.setuptools.packages.find]
