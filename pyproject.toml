@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "routealign"
+version = "1.0.0"
+description = "Input-conditioned consensus for template-based molecular pose prediction"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+chemistry = ["rdkit==2026.9.1", "posebusters==0.5.1"]
+templ = ["rdkit==2024.9.6", "numpy==1.26.4"]
+
+[tool.setuptools.packages.find]
+include = ["routealign*"]

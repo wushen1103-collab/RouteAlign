@@ -1,0 +1,1002 @@
+{
+  "analysis_version": "group-medoid-full-confirmatory-v5",
+  "input_digest": "b78af95096e888c2cab07f8cb7b692c8f3a1de26980172adb12c35aa5a529b4b",
+  "protocol": {
+    "baseline_runs_per_pair": 1,
+    "baseline_sources": {
+      "Iktos-3DAlign": "official same-row public output, commit 747d842",
+      "Iktos-3DDock": "official same-row public output, commit 747d842",
+      "TEMPL-author": "self-rerun author code, commit 727fd30, same rows"
+    },
+    "difficulty_strata_overlap": true,
+    "method_replicates": 5,
+    "prediction_selector_reads_native": false,
+    "replicate_unit": "disjoint five-seed groups",
+    "success_threshold_A": 2.0,
+    "timeout_fallback": "2ica__3m6f used a preregistered deterministic non-random embedding fallback after the full schedule exceeded 900 seconds"
+  },
+  "strata": {
+    "confirmatory_non_low_2d": {
+      "baselines": {
+        "Iktos-3DAlign": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": 0.20434879357520153,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 15,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": 0.23964107022005632,
+            "one_sided_p": 0.9621898745765816,
+            "sign_patterns": 32768
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.008096672576804657,
+              0.53649489225374
+            ],
+            "delta_success_ci95": [
+              -0.21176470588235297,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.96815,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.6258216922371548,
+          "pair_win_rate": 0.2777777777777778,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": 1.0
+        },
+        "Iktos-3DDock": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": 0.1402853359806494,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 15,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": 0.1688609887257303,
+            "one_sided_p": 0.9600537092984223,
+            "sign_patterns": 32768
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.022384838607638083,
+              0.3473724541046767
+            ],
+            "delta_success_ci95": [
+              -0.21176470588235297,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.9513,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.6898851498317069,
+          "pair_win_rate": 0.3888888888888889,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": 1.0
+        },
+        "TEMPL-author": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.21741787645459587,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 15,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.1670600069126878,
+            "one_sided_p": 0.3528029540114132,
+            "sign_patterns": 32768
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.6904905790756847,
+              0.1981928809512664
+            ],
+            "delta_success_ci95": [
+              -0.026666666666666616,
+              0.23809523809523814
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.1829,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 1.0475883622669522,
+          "pair_win_rate": 0.3333333333333333,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 0.8333333333333334
+        }
+      },
+      "claim_scope": "no dominance claim",
+      "n_families": 15,
+      "n_pairs": 18,
+      "proposed": {
+        "PB20_mean": 0.9777777777777779,
+        "PB20_std": 0.030429030972509243,
+        "joint_mean": 0.9222222222222222,
+        "joint_std": 0.030429030972509243,
+        "per_group_mean_rmsd_A": [
+          0.8351431056040001,
+          0.8627525929139879,
+          0.846407453645611,
+          0.8282011360426829,
+          0.7783481408555001
+        ],
+        "rmsd_A_mean": 0.8301704858123564,
+        "rmsd_A_std": 0.03177811176948411,
+        "success_mean": 0.9333333333333333,
+        "success_std": 0.024845199749997673
+      },
+      "same_row_all_five_group_dominance": false
+    },
+    "hard_low_2d_and_flexible": {
+      "baselines": {
+        "Iktos-3DAlign": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.1325425619472007,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 9,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.04957544093167534,
+            "one_sided_p": 0.3469785575048733,
+            "sign_patterns": 512
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.3510602716132239,
+              0.1071931607942613
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.1512,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.8504924733352855,
+          "pair_win_rate": 0.5,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 1.0
+        },
+        "Iktos-3DDock": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.06501287939405065,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 9,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.0992047858024686,
+            "one_sided_p": 0.13060428849902533,
+            "sign_patterns": 512
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.20703721548771226,
+              0.04777572181530987
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.14395,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7829627907821355,
+          "pair_win_rate": 0.5714285714285714,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 1.0
+        },
+        "TEMPL-author": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.3792668774316553,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 9,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.20049916040830593,
+            "one_sided_p": 0.21832358674463936,
+            "sign_patterns": 512
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.8209805231761704,
+              0.1300822466103221
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.2777777777777778
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.0895,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 1.0972167888197402,
+          "pair_win_rate": 0.6428571428571429,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 0.8571428571428571
+        }
+      },
+      "claim_scope": "repeated conditional same-row leader",
+      "n_families": 9,
+      "n_pairs": 14,
+      "proposed": {
+        "PB20_mean": 1.0,
+        "PB20_std": 0.0,
+        "joint_mean": 1.0,
+        "joint_std": 0.0,
+        "per_group_mean_rmsd_A": [
+          0.6960744015195822,
+          0.6908952421469957,
+          0.7409664001308807,
+          0.7722603376228262,
+          0.6895531755201398
+        ],
+        "rmsd_A_mean": 0.717949911388085,
+        "rmsd_A_std": 0.03706834505191746,
+        "success_mean": 1.0,
+        "success_std": 0.0
+      },
+      "same_row_all_five_group_dominance": true
+    },
+    "hard_low_2d_scaffold_and_flexible": {
+      "baselines": {
+        "Iktos-3DAlign": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.09277647544316647,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 9,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.030300193532052894,
+            "one_sided_p": 0.4015594541910331,
+            "sign_patterns": 512
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.34769327832697994,
+              0.1424525509497119
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.27555,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.8386904138135428,
+          "pair_win_rate": 0.5,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 1.0
+        },
+        "Iktos-3DDock": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.06626453639379992,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 9,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.11431542317129832,
+            "one_sided_p": 0.10331384015594541,
+            "sign_patterns": 512
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.2379052192520565,
+              0.053273320021591734
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.1649,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.8121784747641763,
+          "pair_win_rate": 0.5,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 1.0
+        },
+        "TEMPL-author": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.2270477611624564,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 9,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.1148055725597062,
+            "one_sided_p": 0.3840155945419103,
+            "sign_patterns": 512
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.7343769587903289,
+              0.17017840086086597
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.23076923076923073
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.26095,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.9729616995328327,
+          "pair_win_rate": 0.5833333333333334,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 0.9166666666666666
+        }
+      },
+      "claim_scope": "repeated conditional same-row leader",
+      "n_families": 9,
+      "n_pairs": 12,
+      "proposed": {
+        "PB20_mean": 1.0,
+        "PB20_std": 0.0,
+        "joint_mean": 1.0,
+        "joint_std": 0.0,
+        "per_group_mean_rmsd_A": [
+          0.7220845501543831,
+          0.7202090393584607,
+          0.7631546349325348,
+          0.800091385041272,
+          0.7240300823652323
+        ],
+        "rmsd_A_mean": 0.7459139383703766,
+        "rmsd_A_std": 0.03514228960718603,
+        "success_mean": 1.0,
+        "success_std": 0.0
+      },
+      "same_row_all_five_group_dominance": true
+    },
+    "hard_low_2d_similarity": {
+      "baselines": {
+        "Iktos-3DAlign": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.06678230758828774,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 13,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": 0.030115787219288037,
+            "one_sided_p": 0.6006346881484194,
+            "sign_patterns": 8192
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.23094950482155818,
+              0.13689087788414994
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.2513,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7844363391840458,
+          "pair_win_rate": 0.46153846153846156,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 1.0
+        },
+        "Iktos-3DDock": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.03541551917977326,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 13,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": 0.0036983548514962048,
+            "one_sided_p": 0.5108019040644453,
+            "sign_patterns": 8192
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.20202486389579694,
+              0.14033875507498592
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.3475,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7530695507755313,
+          "pair_win_rate": 0.5,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 1.0
+        },
+        "TEMPL-author": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.2781414669591262,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "family_count": 13,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "exact",
+            "observed_family_mean_delta_A": -0.14935881132924322,
+            "one_sided_p": 0.1882094470889784,
+            "sign_patterns": 8192
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.5583093072036179,
+              0.04013442781405047
+            ],
+            "delta_success_ci95": [
+              0.0,
+              0.16129032258064513
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.05285,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.9957954985548843,
+          "pair_win_rate": 0.6923076923076923,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 0.9230769230769231
+        }
+      },
+      "claim_scope": "repeated conditional same-row leader",
+      "n_families": 13,
+      "n_pairs": 26,
+      "proposed": {
+        "PB20_mean": 0.9615384615384615,
+        "PB20_std": 1.2412670766236366e-16,
+        "joint_mean": 0.9615384615384615,
+        "joint_std": 1.2412670766236366e-16,
+        "per_group_mean_rmsd_A": [
+          0.719676792478385,
+          0.6992196385725113,
+          0.7262885761570353,
+          0.7440345878916689,
+          0.69905056287919
+        ],
+        "rmsd_A_mean": 0.7176540315957581,
+        "rmsd_A_std": 0.019108221831678523,
+        "success_mean": 1.0,
+        "success_std": 0.0
+      },
+      "same_row_all_five_group_dominance": true
+    },
+    "hard_scaffold_change": {
+      "baselines": {
+        "Iktos-3DAlign": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": -0.006280123584060826,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 18,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": 0.05048414534714848,
+            "one_sided_p": 0.6988965055174724,
+            "random_seed": 20261045
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.16991439628579644,
+              0.16872529110782145
+            ],
+            "delta_success_ci95": [
+              -0.042857142857142816,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.47745,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.8169922141289544,
+          "pair_win_rate": 0.4444444444444444,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ],
+          "success": 1.0
+        },
+        "Iktos-3DDock": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": 0.05160631661399928,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 18,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": 0.05937039909144917,
+            "one_sided_p": 0.7309013454932726,
+            "random_seed": 20261045
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.0696869423622252,
+              0.19541767980830194
+            ],
+            "delta_success_ci95": [
+              -0.042857142857142816,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.7898,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7591057739308943,
+          "pair_win_rate": 0.4444444444444444,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": 1.0
+        },
+        "TEMPL-author": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.25777579584131305,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 18,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": -0.13296034516770694,
+            "one_sided_p": 0.18255908720456399,
+            "random_seed": 20261045
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.5641121484541929,
+              0.04007708560995395
+            ],
+            "delta_success_ci95": [
+              -0.01666666666666672,
+              0.1724137931034483
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.04515,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 1.0684878863862066,
+          "pair_win_rate": 0.5555555555555556,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 0.9259259259259259
+        }
+      },
+      "claim_scope": "no dominance claim",
+      "n_families": 18,
+      "n_pairs": 27,
+      "proposed": {
+        "PB20_mean": 0.9481481481481481,
+        "PB20_std": 0.020286020648339453,
+        "joint_mean": 0.9481481481481481,
+        "joint_std": 0.020286020648339453,
+        "per_group_mean_rmsd_A": [
+          0.8216479868425516,
+          0.8268152745756623,
+          0.8209104029071007,
+          0.8249360906571961,
+          0.7592506977419577
+        ],
+        "rmsd_A_mean": 0.8107120905448937,
+        "rmsd_A_std": 0.028868274399468003,
+        "success_mean": 0.9925925925925926,
+        "success_std": 0.01656346649999847
+      },
+      "same_row_all_five_group_dominance": false
+    },
+    "hard_upper_flexibility_band": {
+      "baselines": {
+        "Iktos-3DAlign": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": 0.05604005495508424,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 19,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": 0.14842393075628785,
+            "one_sided_p": 0.834840825795871,
+            "random_seed": 20261046
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.13459418804397766,
+              0.30684229510416294
+            ],
+            "delta_success_ci95": [
+              -0.13043478260869568,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.6962,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7612563833946141,
+          "pair_win_rate": 0.41379310344827586,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": 1.0
+        },
+        "Iktos-3DDock": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": 0.055124721439566926,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 19,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": 0.08670865961684876,
+            "one_sided_p": 0.8293308533457333,
+            "random_seed": 20261046
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.06747089801442391,
+              0.2050545307159548
+            ],
+            "delta_success_ci95": [
+              -0.13043478260869568,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.79975,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7621717169101314,
+          "pair_win_rate": 0.4827586206896552,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": 1.0
+        },
+        "TEMPL-author": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.3225501387962204,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 19,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": -0.13100134541383307,
+            "one_sided_p": 0.19136904315478423,
+            "random_seed": 20261046
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.6381099587004861,
+              0.037456918517852225
+            ],
+            "delta_success_ci95": [
+              0.02400000000000002,
+              0.22666666666666668
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.0404,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 1.1398465771459187,
+          "pair_win_rate": 0.4827586206896552,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 0.8275862068965517
+        }
+      },
+      "claim_scope": "no dominance claim",
+      "n_families": 19,
+      "n_pairs": 29,
+      "proposed": {
+        "PB20_mean": 0.9862068965517242,
+        "PB20_std": 0.01888698474155743,
+        "joint_mean": 0.9517241379310345,
+        "joint_std": 0.01888698474155749,
+        "per_group_mean_rmsd_A": [
+          0.8089094084646509,
+          0.8234399510481656,
+          0.840168315220932,
+          0.8412389326377543,
+          0.7727255843769903
+        ],
+        "rmsd_A_mean": 0.8172964383496988,
+        "rmsd_A_std": 0.02824452082604622,
+        "success_mean": 0.9586206896551724,
+        "success_std": 0.015421158465515823
+      },
+      "same_row_all_five_group_dominance": false
+    },
+    "primary_all44": {
+      "baselines": {
+        "Iktos-3DAlign": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": 0.04413496106950343,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 25,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": 0.15559643223542688,
+            "one_sided_p": 0.9183804080979595,
+            "random_seed": 20261052
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.09733867595318346,
+              0.23949727138747065
+            ],
+            "delta_success_ci95": [
+              -0.0888888888888889,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.71385,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7195485290694086,
+          "pair_win_rate": 0.38636363636363635,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": 1.0
+        },
+        "Iktos-3DDock": {
+          "all_five_groups_dominate": false,
+          "delta_proposed_mean_rmsd_A": 0.036462103385854316,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 25,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": 0.10203105009613855,
+            "one_sided_p": 0.8898605506972466,
+            "random_seed": 20261052
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.08489838022929085,
+              0.17821562573918695
+            ],
+            "delta_success_ci95": [
+              -0.0888888888888889,
+              0.0
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.72835,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 0.7272213867530577,
+          "pair_win_rate": 0.45454545454545453,
+          "per_group_dominance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": 1.0
+        },
+        "TEMPL-author": {
+          "all_five_groups_dominate": true,
+          "delta_proposed_mean_rmsd_A": -0.2532999981163637,
+          "family_signflip": {
+            "alternative": "proposed RMSD lower",
+            "draws": 200000,
+            "family_count": 25,
+            "holm_adjusted_p_across_21": 1.0,
+            "method": "fixed-seed Monte Carlo",
+            "observed_family_mean_delta_A": -0.0969029568537951,
+            "one_sided_p": 0.1977440112799436,
+            "random_seed": 20261052
+          },
+          "hierarchical_bootstrap": {
+            "cluster_unit": "protein family",
+            "delta_mean_rmsd_A_ci95": [
+              -0.4815589162875743,
+              0.008510198343285093
+            ],
+            "delta_success_ci95": [
+              0.014277408637873714,
+              0.15909090909090906
+            ],
+            "probability_delta_mean_rmsd_ge_0": 0.02975,
+            "random_seed": 20261027,
+            "replicates": 20000,
+            "resamples_independent_seed_groups": true
+          },
+          "mean_rmsd_A": 1.0169834882552757,
+          "pair_win_rate": 0.5454545454545454,
+          "per_group_dominance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": 0.8863636363636364
+        }
+      },
+      "claim_scope": "no dominance claim",
+      "n_families": 25,
+      "n_pairs": 44,
+      "proposed": {
+        "PB20_mean": 0.9681818181818181,
+        "PB20_std": 0.01244823994329922,
+        "joint_mean": 0.9454545454545453,
+        "joint_std": 0.012448239943299279,
+        "per_group_mean_rmsd_A": [
+          0.7669130114843186,
+          0.7661194835303884,
+          0.7754281169478165,
+          0.7784663575898112,
+          0.731490481142226
+        ],
+        "rmsd_A_mean": 0.7636834901389121,
+        "rmsd_A_std": 0.01876981039552445,
+        "success_mean": 0.9727272727272729,
+        "success_std": 0.010163945352271763
+      },
+      "same_row_all_five_group_dominance": false
+    }
+  }
+}

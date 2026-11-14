@@ -1,0 +1,15 @@
+{
+  "config/cohort.csv": "4d9924a2985c556ca45060a7201d6f21bce91021d33c53206dd8f048662c9549",
+  "config/protocol.json": "f8a8bac462d3a6e9957d8579e6c74cfe2aade9eb4146a4c915c4c9edd847721d",
+  "config/roshambo_protocol.md": "a79febda1b8875a8246a8fc17362ed259e316ae094bc1d2e4b119be8d1a73e21",
+  "reference/hybrid_summary.json": "7e76370f74ea96aa73a35d8a03f390781d6e0925a33342d8049d78910064b1ad",
+  "reference/observations.json.gz": "7635eddd90c493bc53c3ebe5191ad7c633ab30ef8d5e4e604dc78c42cef030c1",
+  "reference/uniform_summary.json": "0a5be65c854b46b27bdb0d93563ce5a9ff828539e18f34c18be7ffdf9f4d5f53",
+  "reference/supporting/atom_order_stress.csv": "54108ec23ca7100e44ea2632cf7393dd649fbf8ab159344c99d22876b0f7cf09",
+  "reference/supporting/continuous_geometry.csv": "b9125fb7e2a42e9c975cb4da9e3c85b7130ba8086d20a988942b9e5dac49a825",
+  "reference/supporting/endpoint_observations.csv": "7cb95ffad653c88e7f0be06c4ea5957ac5aa4254ed60e2c6f364a8dd9de9a897",
+  "reference/supporting/family_effects.csv": "681c11be747666e966c5d85d1e4e46aa60a02114f9b65243dc3551695173ef7b",
+  "reference/supporting/physical_checks.csv": "91f4c58b64399e05dbacd5e73aba4f2f8a4a506a4f3f49e583bc5d70529ab2ce",
+  "reference/supporting/repair_observations.csv": "21d9682ebb9625622174f2c7f9790fd988495f45b52ad6728e59118c74b54c46",
+  "reference/supporting/structural_cases.csv": "10261447c3f463fa016376237f3109eb0d6f0019d882a488c7c1b48442345368"
+}

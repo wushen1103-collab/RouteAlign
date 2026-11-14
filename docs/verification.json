@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "checks": {
+    "resource_isolation": true,
+    "fault_injection": true,
+    "timeout": true,
+    "resume_without_overwrite": true,
+    "native_withheld_during_both_routes": true,
+    "runner_SIGTERM_stops_active_task": true,
+    "two_worker_resume": true,
+    "editable_install_and_reference_lookup": true,
+    "supporting_704_endpoints_match_frozen_records": true
+  },
+  "molecular_cases": [
+    {
+      "pair": "1zw5_ZOL_A_901__4ogu",
+      "route": "medoid",
+      "rmsd_A": 1.1132034305068892,
+      "frozen_rmsd_A": 1.1132034305068892,
+      "physical_pass": true,
+      "native_withheld_during_selection": true
+    },
+    {
+      "pair": "3k5e_K5E_A_369__2x7c",
+      "route": "receptor-consensus",
+      "rmsd_A": 0.2778478559439173,
+      "frozen_rmsd_A": 0.2778478559439173,
+      "physical_pass": true,
+      "native_withheld_during_selection": true
+    }
+  ],
+  "templ_case": {
+    "pair": "1zw5_ZOL_A_901__4ogu",
+    "rmsd_A": 0.6079861979708726,
+    "frozen_rmsd_A": 0.6079861979708726,
+    "wrong_generation_environment_rejected": true
+  },
+  "software": {
+    "python": "3.10.20",
+    "main_numpy": "1.26.4",
+    "main_rdkit": "2026.09.1",
+    "posebusters": "0.5.1",
+    "templ_generation_rdkit": "2024.09.6",
+    "templ_generation_numpy": "1.26.4"
+  },
+  "statistics": {
+    "analyses": 2,
+    "strata_per_analysis": 7,
+    "numeric_values_verified": 1389
+  }
+}
