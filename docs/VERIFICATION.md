@@ -1,28 +1,18 @@
-# Release verification
+# Current verification scope
 
-The portable workers were checked in an isolated workspace, separate from the
-saved experimental outputs. Existing environments were reused.
+The correction recalculates chemical graph distances for all 220 groups and
+re-evaluates 660 selected endpoints from 1,100 unchanged candidate poses.
+All 1,100 physical checks are rerun and agree with the archived pass flags.
 
-- Frozen statistical reproduction checked 1,389 numerical quantities across
-  the hybrid and uniform-medoid analyses, each with seven strata.
-- A five-candidate low-similarity case reproduced RMSD 1.1132034305068892 Å.
-- A five-candidate receptor-consensus case reproduced RMSD 0.2778478559439173 Å.
-- Both case values and physical-pass outcomes matched their frozen endpoints.
-- Native query poses were withheld during candidate generation, repair and
-  selection, then restored only for endpoint evaluation.
-- The TEMPL smoke case reproduced RMSD 0.6079861979708726 Å when generated in
-  its original RDKit 2024.09.6 environment and evaluated in the common endpoint
-  environment. The runner rejects the mismatched generation environment.
-- An injected failure returned 97 without committing a task result. An imposed
-  deadline returned 124 and stopped the task. Repeating a completed task resumed
-  without replacing the saved result.
-- Resource tests checked a single allowed CPU, hidden GPUs, and termination of
-  a child process before it could write a delayed output.
+Checks cover atom renumbering, aromatic and resonance symmetry, nonzero
+receptor-frame translation, bounded timeout, failure cleanup and hash-sensitive
+recovery. Observed candidate comparisons include up to 48 complete atom maps.
 
-The complete original cohort is represented by frozen observations; release
-validation reran representative molecular cases rather than repeating the full
-experimental campaign. ROSHAMBO generation was not rerun during packaging.
-Its original observations, frozen source version and controlled worker are
-included in the reproduction protocol.
+`python -m routealign.reproduce` verifies the corrected seven-stratum primary
+analysis and three-stratum same-candidate selector ablation. Statistical
+intervals use 20,000 hierarchical resamples; family tests and Holm adjustments
+are recomputed. Independent external-model integrity review is unavailable in
+this correction run; execution checks are not presented as such a review.
 
-Machine-readable numerical checks are in [verification.json](verification.json).
+The additional input-stereochemistry audit remains an unresolved molecular
+correctness finding, explicitly recorded with all affected pair and seed IDs.

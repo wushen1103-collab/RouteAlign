@@ -39,7 +39,7 @@ def main():
     data = json.loads(raw)
     args.output.mkdir(parents=True, exist_ok=True)
     results = []
-    for label, module in [('hybrid', statistics), ('uniform', uniform_statistics)]:
+    for label, module in [('hybrid', statistics)]:
         if not args.live:
             module.load = lambda label=label: (data[label + '_records'], hashlib.sha256(raw).hexdigest())
         result, _ = module.analyze()
@@ -55,6 +55,13 @@ def main():
         with (args.output / (label + '_table.csv')).open('w', newline='') as f:
             w = csv.writer(f); w.writerow(['stratum', 'pairs', 'method', 'mean_rmsd_A', 'std_rmsd_A', 'success', 'success_std', 'physical_pass', 'physical_pass_std', 'joint_success', 'joint_std', 'source']); w.writerows(rows)
         results.append({'analysis': label, 'strata': len(result['strata']), 'numeric_values_verified': compared})
+    if not args.live:
+        from routealign.ablation import analyze
+        groups=json.loads(gzip.decompress((ref/'same_candidate_groups.json.gz').read_bytes()))
+        ablation=analyze(groups)
+        checked=compare(ablation,json.loads((ref/'ablation_summary.json').read_text()),'ablation')
+        (args.output/'ablation_summary.json').write_text(json.dumps(ablation,indent=2)+'\n')
+        results.append({'analysis':'same_candidate_ablation','strata':3,'numeric_values_verified':checked})
     print(json.dumps({'status': 'PASS', 'results': results, 'mode': 'live' if args.live else 'frozen'}, indent=2))
 
 

@@ -24,8 +24,13 @@ rows are not a separately sampled benchmark. `structural_cases.csv` identifies
 the native and predicted coordinate files by content checksum without bundling
 the original dataset structures.
 
-`routealign.reproduce` regenerates the primary and uniform-ablation summaries,
+`routealign.reproduce` regenerates the corrected primary and identical-candidate ablation summaries,
 including intervals and tests, directly from the frozen per-pair observations.
 The supporting geometry CSVs are the archived deterministic diagnostics from
 those saved coordinates. Dataset downloads, fresh pose generation, and frozen
 observation aggregation are distinct reproduction operations.
+
+The active selector comparison uses `same_candidate_groups.json.gz`, with
+`ablation_summary.json` and `supporting/same_candidate_ablation.csv`. Endpoint
+observations contain all three rules (660 selected endpoints). Historical
+uniform-system observations are retained and are not final-routing controls.

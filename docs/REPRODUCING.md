@@ -42,7 +42,7 @@ single explicitly requested ROSHAMBO task at a time; its worker also checks
 device identity/load and takes an exclusive per-device lock. An idle-device
 reading does not start additional jobs.
 
-## 3. Regenerate RouteAlign and the uniform-medoid ablation
+## 3. Regenerate RouteAlign and the historical uniform system
 
 There are 44 pairs × 25 seeds = 1,100 seed-level tasks. Seeds form five disjoint
 groups of five. The full protocol and pair order are in `config/protocol.json`.
@@ -176,3 +176,13 @@ Family-level sign flips use exact enumeration for at most 16 families and a
 fixed-seed 200,000-draw Monte Carlo test otherwise. The 35 hybrid-analysis tests
 use one Holm correction family. Difficulty strata overlap; their counts should
 not be summed as independent datasets.
+
+## Corrected selector-only control
+
+Both final selectors use `routealign.atom_correspondence` for chemical graph
+mapping, symmetry and receptor-frame distances. `python -m routealign.ablation`
+replays all 220 groups and three rules on identical frozen candidates and
+recomputes the paired statistics. This is the active final-selector ablation.
+The historical uniform system also changed generation and cannot isolate routing.
+SDF chirality is audited separately; coordinate matching preserves connectivity
+and isotopes without changing or fitting coordinates. See the audit JSON.

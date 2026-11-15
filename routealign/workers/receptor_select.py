@@ -2,6 +2,8 @@
 """PB-valid receptor-score/consensus selector locked on seed group 1."""
 from __future__ import annotations
 from routealign import settings
+from routealign.atom_correspondence import matrix
+import routealign.atom_correspondence as correspondence
 
 import argparse
 import atexit
@@ -108,6 +110,7 @@ def run(index: int, audit_only: bool = False, fault_after_selection: bool = Fals
                 "repair_metadata_sha256": [sha256(path) for path in repair_meta],
                 "generation_metadata_sha256": [sha256(path) for path in generation_meta],
                 "consensus_weight": CONSENSUS_WEIGHT,
+                "mapping_sha256": sha256(pathlib.Path(correspondence.__file__)),
                 "worker_sha256": sha256(pathlib.Path(__file__))}
     if audit_only:
         return {**expected, "status": "audit_pass", "selector_reads_native": False,
@@ -121,10 +124,8 @@ def run(index: int, audit_only: bool = False, fault_after_selection: bool = Fals
         if all(payload.get(key) == value for key, value in expected.items()):
             return {**expected, "status": "resumed", "selected_seed": payload["selected_seed"]}
         raise RuntimeError("resume identity drift")
-    arrays = [coordinates(path) for path in poses]
-    if len({array.shape for array in arrays}) != 1: raise RuntimeError("atom order/shape drift")
-    distances = np.asarray([[float(np.sqrt(np.mean(np.sum((a - b) ** 2, axis=1))))
-                             for b in arrays] for a in arrays])
+    molecules = [next(m for m in Chem.SDMolSupplier(str(path), removeHs=True, sanitize=True) if m is not None) for path in poses]
+    distances, mapping_audit = matrix(molecules)
     consensus = [float(np.median(np.delete(distances[i], i))) for i in range(len(seeds))]
     receptor_scores = []
     pb_pass = []
@@ -156,7 +157,8 @@ def run(index: int, audit_only: bool = False, fault_after_selection: bool = Fals
                    "objective": float(objective[i])} for i in range(len(seeds))]
     payload = {**expected, "status": "success", "selected_seed": selected_seed,
                "selected_pose_sha256": sha256(stage / "selected.sdf"),
-               "candidates": candidates,
+               "candidates": candidates, "chemical_mapping_audit": mapping_audit,
+               "distance_definition": "minimum connectivity-preserving full-graph, resonance-aware RMSD; no rigid fit",
                "selector": "PB-valid-first minimum z(receptor_score) + 5*z(consensus_median)",
                "development_scope": "consensus weight fixed using seed group 1 only",
                "selector_reads_native": False, "query_native_ligand_read": False,

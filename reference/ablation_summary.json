@@ -1,0 +1,622 @@
+{
+  "all": {
+    "comparisons": {
+      "medoid": {
+        "delta_mean_A": -0.005896888476584468,
+        "family_signflip": {
+          "alternative": "proposed RMSD lower",
+          "draws": 200000,
+          "family_count": 25,
+          "holm_across_6": 0.6999715001424993,
+          "method": "fixed-seed Monte Carlo",
+          "observed_family_mean_delta_A": -0.009552548308033659,
+          "one_sided_p": 0.13999430002849986,
+          "random_seed": 20261052
+        },
+        "hierarchical_bootstrap": {
+          "cluster_unit": "protein family",
+          "delta_mean_rmsd_A_ci95": [
+            -0.031420608049793464,
+            0.0004287996183702811
+          ],
+          "delta_success_ci95": [
+            0.0,
+            0.02608695652173909
+          ],
+          "probability_delta_mean_rmsd_ge_0": 0.13275,
+          "random_seed": 20261027,
+          "replicates": 20000,
+          "resamples_independent_seed_groups": true
+        },
+        "pair_losses": 2,
+        "pair_ties": 37,
+        "pair_wins": 5
+      },
+      "receptor_consensus": {
+        "delta_mean_A": -0.0001430580366180308,
+        "family_signflip": {
+          "alternative": "proposed RMSD lower",
+          "draws": 200000,
+          "family_count": 25,
+          "holm_across_6": 1.0,
+          "method": "fixed-seed Monte Carlo",
+          "observed_family_mean_delta_A": -2.9804375927809144e-05,
+          "one_sided_p": 0.3740681296593517,
+          "random_seed": 20261052
+        },
+        "hierarchical_bootstrap": {
+          "cluster_unit": "protein family",
+          "delta_mean_rmsd_A_ci95": [
+            -0.0006206074054487754,
+            0.00019884337574538336
+          ],
+          "delta_success_ci95": [
+            0.0,
+            0.0
+          ],
+          "probability_delta_mean_rmsd_ge_0": 0.27325,
+          "random_seed": 20261027,
+          "replicates": 20000,
+          "resamples_independent_seed_groups": true
+        },
+        "pair_losses": 3,
+        "pair_ties": 38,
+        "pair_wins": 3
+      }
+    },
+    "n_families": 25,
+    "n_pairs": 44,
+    "rules": {
+      "medoid": {
+        "PB_pass": {
+          "mean": 0.9727272727272729,
+          "per_group": [
+            0.9772727272727273,
+            0.9545454545454546,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273
+          ],
+          "std": 0.010163945352271763
+        },
+        "joint": {
+          "mean": 0.9681818181818184,
+          "per_group": [
+            0.9772727272727273,
+            0.9318181818181818,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273
+          ],
+          "std": 0.020327890704543574
+        },
+        "rmsd_A": {
+          "mean": 0.6935561868466598,
+          "per_group": [
+            0.6630307402408592,
+            0.7268927765159808,
+            0.7072285289007939,
+            0.6932486428664952,
+            0.6773802457091694
+          ],
+          "std": 0.024959064953904018
+        },
+        "success": {
+          "mean": 0.990909090909091,
+          "per_group": [
+            1.0,
+            0.9545454545454546,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.020327890704543525
+        }
+      },
+      "receptor_consensus": {
+        "PB_pass": {
+          "mean": 0.9772727272727273,
+          "per_group": [
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273
+          ],
+          "std": 0.0
+        },
+        "joint": {
+          "mean": 0.9727272727272729,
+          "per_group": [
+            0.9772727272727273,
+            0.9545454545454546,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273
+          ],
+          "std": 0.010163945352271763
+        },
+        "rmsd_A": {
+          "mean": 0.6878023564066933,
+          "per_group": [
+            0.663074084107788,
+            0.6981078960885952,
+            0.7074201751475365,
+            0.6929800020546664,
+            0.6774296246348803
+          ],
+          "std": 0.01758516413087034
+        },
+        "success": {
+          "mean": 0.9954545454545455,
+          "per_group": [
+            1.0,
+            0.9772727272727273,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.010163945352271763
+        }
+      },
+      "routed": {
+        "PB_pass": {
+          "mean": 0.9772727272727273,
+          "per_group": [
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273
+          ],
+          "std": 0.0
+        },
+        "joint": {
+          "mean": 0.9727272727272729,
+          "per_group": [
+            0.9772727272727273,
+            0.9545454545454546,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273
+          ],
+          "std": 0.010163945352271763
+        },
+        "rmsd_A": {
+          "mean": 0.6876592983700752,
+          "per_group": [
+            0.6630744506823402,
+            0.6979319261948599,
+            0.7074208946990371,
+            0.6928636294662832,
+            0.6770055908078559
+          ],
+          "std": 0.017614261655720616
+        },
+        "success": {
+          "mean": 0.9954545454545455,
+          "per_group": [
+            1.0,
+            0.9772727272727273,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.010163945352271763
+        }
+      }
+    }
+  },
+  "low": {
+    "comparisons": {
+      "medoid": {
+        "delta_mean_A": 0.0,
+        "family_signflip": {
+          "alternative": "proposed RMSD lower",
+          "family_count": 13,
+          "holm_across_6": 1.0,
+          "method": "exact",
+          "observed_family_mean_delta_A": 0.0,
+          "one_sided_p": 1.0,
+          "sign_patterns": 8192
+        },
+        "hierarchical_bootstrap": {
+          "cluster_unit": "protein family",
+          "delta_mean_rmsd_A_ci95": [
+            0.0,
+            0.0
+          ],
+          "delta_success_ci95": [
+            0.0,
+            0.0
+          ],
+          "probability_delta_mean_rmsd_ge_0": 1.0,
+          "random_seed": 20261027,
+          "replicates": 20000,
+          "resamples_independent_seed_groups": true
+        },
+        "pair_losses": 0,
+        "pair_ties": 26,
+        "pair_wins": 0
+      },
+      "receptor_consensus": {
+        "delta_mean_A": -0.000242098215815129,
+        "family_signflip": {
+          "alternative": "proposed RMSD lower",
+          "family_count": 13,
+          "holm_across_6": 1.0,
+          "method": "exact",
+          "observed_family_mean_delta_A": -4.0461357234189696e-05,
+          "one_sided_p": 0.3750762846332235,
+          "sign_patterns": 8192
+        },
+        "hierarchical_bootstrap": {
+          "cluster_unit": "protein family",
+          "delta_mean_rmsd_A_ci95": [
+            -0.0009949956622834933,
+            0.00036645344801730623
+          ],
+          "delta_success_ci95": [
+            0.0,
+            0.0
+          ],
+          "probability_delta_mean_rmsd_ge_0": 0.2715,
+          "random_seed": 20261027,
+          "replicates": 20000,
+          "resamples_independent_seed_groups": true
+        },
+        "pair_losses": 3,
+        "pair_ties": 20,
+        "pair_wins": 3
+      }
+    },
+    "n_families": 13,
+    "n_pairs": 26,
+    "rules": {
+      "medoid": {
+        "PB_pass": {
+          "mean": 0.9615384615384615,
+          "per_group": [
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616
+          ],
+          "std": 1.2412670766236366e-16
+        },
+        "joint": {
+          "mean": 0.9615384615384615,
+          "per_group": [
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616
+          ],
+          "std": 1.2412670766236366e-16
+        },
+        "rmsd_A": {
+          "mean": 0.7130900048120214,
+          "per_group": [
+            0.7205746439914815,
+            0.7000853577412169,
+            0.7262885012007972,
+            0.719147122622058,
+            0.6993543985045536
+          ],
+          "std": 0.012496964959599526
+        },
+        "success": {
+          "mean": 1.0,
+          "per_group": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.0
+        }
+      },
+      "receptor_consensus": {
+        "PB_pass": {
+          "mean": 0.9615384615384615,
+          "per_group": [
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616
+          ],
+          "std": 1.2412670766236366e-16
+        },
+        "joint": {
+          "mean": 0.9615384615384615,
+          "per_group": [
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616
+          ],
+          "std": 1.2412670766236366e-16
+        },
+        "rmsd_A": {
+          "mean": 0.7133321030278366,
+          "per_group": [
+            0.720574023634547,
+            0.700383152946,
+            0.7262872834982578,
+            0.7193440608485526,
+            0.7000719942118258
+          ],
+          "std": 0.012246750037943677
+        },
+        "success": {
+          "mean": 1.0,
+          "per_group": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.0
+        }
+      },
+      "routed": {
+        "PB_pass": {
+          "mean": 0.9615384615384615,
+          "per_group": [
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616
+          ],
+          "std": 1.2412670766236366e-16
+        },
+        "joint": {
+          "mean": 0.9615384615384615,
+          "per_group": [
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616,
+            0.9615384615384616
+          ],
+          "std": 1.2412670766236366e-16
+        },
+        "rmsd_A": {
+          "mean": 0.7130900048120214,
+          "per_group": [
+            0.7205746439914815,
+            0.7000853577412169,
+            0.7262885012007972,
+            0.719147122622058,
+            0.6993543985045536
+          ],
+          "std": 0.012496964959599526
+        },
+        "success": {
+          "mean": 1.0,
+          "per_group": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "other": {
+    "comparisons": {
+      "medoid": {
+        "delta_mean_A": -0.014414616276095367,
+        "family_signflip": {
+          "alternative": "proposed RMSD lower",
+          "family_count": 15,
+          "holm_across_6": 0.4689187952027831,
+          "method": "exact",
+          "observed_family_mean_delta_A": -0.01636396797544794,
+          "one_sided_p": 0.07815313253379719,
+          "sign_patterns": 32768
+        },
+        "hierarchical_bootstrap": {
+          "cluster_unit": "protein family",
+          "delta_mean_rmsd_A_ci95": [
+            -0.0794995309589455,
+            0.0009817583576092494
+          ],
+          "delta_success_ci95": [
+            0.0,
+            0.06406666666666079
+          ],
+          "probability_delta_mean_rmsd_ge_0": 0.13155,
+          "random_seed": 20261027,
+          "replicates": 20000,
+          "resamples_independent_seed_groups": true
+        },
+        "pair_losses": 2,
+        "pair_ties": 11,
+        "pair_wins": 5
+      },
+      "receptor_consensus": {
+        "delta_mean_A": 0.0,
+        "family_signflip": {
+          "alternative": "proposed RMSD lower",
+          "family_count": 15,
+          "holm_across_6": 1.0,
+          "method": "exact",
+          "observed_family_mean_delta_A": 0.0,
+          "one_sided_p": 1.0,
+          "sign_patterns": 32768
+        },
+        "hierarchical_bootstrap": {
+          "cluster_unit": "protein family",
+          "delta_mean_rmsd_A_ci95": [
+            0.0,
+            0.0
+          ],
+          "delta_success_ci95": [
+            0.0,
+            0.0
+          ],
+          "probability_delta_mean_rmsd_ge_0": 1.0,
+          "random_seed": 20261027,
+          "replicates": 20000,
+          "resamples_independent_seed_groups": true
+        },
+        "pair_losses": 0,
+        "pair_ties": 18,
+        "pair_wins": 0
+      }
+    },
+    "n_families": 15,
+    "n_pairs": 18,
+    "rules": {
+      "medoid": {
+        "PB_pass": {
+          "mean": 0.9888888888888889,
+          "per_group": [
+            1.0,
+            0.9444444444444444,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.024845199749997673
+        },
+        "joint": {
+          "mean": 0.9777777777777779,
+          "per_group": [
+            1.0,
+            0.8888888888888888,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.04969039949999535
+        },
+        "rmsd_A": {
+          "mean": 0.6653406720078036,
+          "per_group": [
+            0.5799117681566267,
+            0.7656146036350839,
+            0.6796974578007886,
+            0.6558397276640154,
+            0.6456398027825032
+          ],
+          "std": 0.06715182139593819
+        },
+        "success": {
+          "mean": 0.9777777777777779,
+          "per_group": [
+            1.0,
+            0.8888888888888888,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.04969039949999535
+        }
+      },
+      "receptor_consensus": {
+        "PB_pass": {
+          "mean": 1.0,
+          "per_group": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.0
+        },
+        "joint": {
+          "mean": 0.9888888888888889,
+          "per_group": [
+            1.0,
+            0.9444444444444444,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.024845199749997673
+        },
+        "rmsd_A": {
+          "mean": 0.6509260557317083,
+          "per_group": [
+            0.5800186159024692,
+            0.6948214139612326,
+            0.6801676853076055,
+            0.6548985837968304,
+            0.6447239796904036
+          ],
+          "std": 0.04433956225522455
+        },
+        "success": {
+          "mean": 0.9888888888888889,
+          "per_group": [
+            1.0,
+            0.9444444444444444,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.024845199749997673
+        }
+      },
+      "routed": {
+        "PB_pass": {
+          "mean": 1.0,
+          "per_group": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.0
+        },
+        "joint": {
+          "mean": 0.9888888888888889,
+          "per_group": [
+            1.0,
+            0.9444444444444444,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.024845199749997673
+        },
+        "rmsd_A": {
+          "mean": 0.6509260557317083,
+          "per_group": [
+            0.5800186159024692,
+            0.6948214139612326,
+            0.6801676853076055,
+            0.6548985837968304,
+            0.6447239796904036
+          ],
+          "std": 0.04433956225522455
+        },
+        "success": {
+          "mean": 0.9888888888888889,
+          "per_group": [
+            1.0,
+            0.9444444444444444,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "std": 0.024845199749997673
+        }
+      }
+    }
+  }
+}

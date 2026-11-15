@@ -2,6 +2,8 @@
 """Outcome-blind group medoid selector for the frozen full 44-pair expansion."""
 from __future__ import annotations
 from routealign import settings
+from routealign.atom_correspondence import matrix
+import routealign.atom_correspondence as correspondence
 
 import argparse
 import atexit
@@ -111,7 +113,8 @@ def run(index, audit_only=False, fault_after_selection=False, hold_after_selecti
         "preregister_sha256": sha256(PREREG),
         "candidate_pose_sha256": [sha256(path) for path in poses],
         "repair_result_sha256": [sha256(path) for path in repairs],
-        "worker_sha256": sha256(__file__),
+        "mapping_sha256": sha256(pathlib.Path(correspondence.__file__)),
+                "worker_sha256": sha256(__file__),
     }
     if audit_only:
         return {**expected, "status": "audit_pass", "selector_reads_native": False,
@@ -123,13 +126,9 @@ def run(index, audit_only=False, fault_after_selection=False, hold_after_selecti
         if all(payload.get(key) == value for key, value in expected.items()):
             return {**expected, "status": "resumed", "selected_seed": payload["selected_seed"]}
         raise RuntimeError("resume identity drift")
-    arrays = {seed: coordinates(path) for seed, path in zip(seeds, poses)}
-    if len({array.shape for array in arrays.values()}) != 1:
-        raise RuntimeError("atom order/shape drift")
-    distances = {
-        (a, b): float(np.sqrt(np.mean(np.sum((arrays[a] - arrays[b]) ** 2, axis=1))))
-        for a in seeds for b in seeds
-    }
+    molecules = [next(m for m in Chem.SDMolSupplier(str(path), removeHs=True, sanitize=True) if m is not None) for path in poses]
+    distance_matrix, mapping_audit = matrix(molecules)
+    distances = {(a,b): float(distance_matrix[i,j]) for i,a in enumerate(seeds) for j,b in enumerate(seeds)}
     ranking = []
     for seed in seeds:
         other = [distances[seed, candidate] for candidate in seeds if candidate != seed]
@@ -149,6 +148,8 @@ def run(index, audit_only=False, fault_after_selection=False, hold_after_selecti
         "status": "success",
         "selected_seed": selected_seed,
         "selected_pose_sha256": sha256(stage / "selected.sdf"),
+        "chemical_mapping_audit": mapping_audit,
+        "distance_definition": "minimum connectivity-preserving full-graph, resonance-aware RMSD; no rigid fit",
         "rank_median_mean_seed": [list(item) for item in sorted(ranking)],
         "selector": "receptor-frame coordinate medoid within a frozen disjoint five-seed group",
         "selector_reads_native": False,
