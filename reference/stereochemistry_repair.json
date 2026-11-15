@@ -1,0 +1,575 @@
+{
+  "status": "complete",
+  "pre_repair_diagnosis": {
+    "status": "complete",
+    "records": 40,
+    "coordinate_matches_expected": 0,
+    "coordinate_matches_stored": 40,
+    "rows": [
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 101,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 103,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 107,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 109,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 113,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 137,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 139,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 157,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 163,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 167,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 179,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 181,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 191,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 193,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 199,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 211,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 227,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8c",
+        "seed": 229,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)CO)OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 101,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 107,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 109,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 113,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 127,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 131,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 137,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 139,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 151,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 157,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 167,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 179,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 191,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 193,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 197,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 199,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 211,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 227,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "1a4g_ZMR_A_466__1f8e",
+        "seed": 229,
+        "stored": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "coordinate_inferred": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@H]1[NH3+]",
+        "expected": "CC(=O)N[C@H]1[C@H]([C@H](O)[C@H](O)C[NH3+])OC(C(=O)[O-])=C[C@@H]1[NH3+]",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "3kba_WOW_A_1__3hq5",
+        "seed": 151,
+        "stored": "C[N@@H+]1CC[C@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "coordinate_inferred": "C[N@@H+]1CC[C@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "expected": "C[N@H+]1CC[C@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "3kba_WOW_A_1__3hq5",
+        "seed": 157,
+        "stored": "C[N@@H+]1CC[C@@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "coordinate_inferred": "C[N@@H+]1CC[C@@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "expected": "C[N@H+]1CC[C@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      },
+      {
+        "pair": "3kba_WOW_A_1__3hq5",
+        "seed": 227,
+        "stored": "C[N@@H+]1CC[C@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "coordinate_inferred": "C[N@@H+]1CC[C@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "expected": "C[N@H+]1CC[C@H](N(Cc2ccccc2C(F)(F)F)c2ccc(C#N)c(Cl)c2)C1",
+        "stored_matches_expected": false,
+        "coordinate_inferred_matches_expected": false,
+        "coordinate_inferred_matches_stored": true,
+        "native_pose_read": false
+      }
+    ]
+  },
+  "repair_summary": {
+    "status": "complete",
+    "count": 40,
+    "PB_pass": 40,
+    "failed": [],
+    "mean_movement_rmsd_A": 0.6227625289407804,
+    "max_atom_movement_A": 10.20385299047685,
+    "stereo_exact": true,
+    "native_pose_read": false
+  },
+  "reselection": {
+    "group_count": 220,
+    "candidate_count": 1100,
+    "selection_change_count": 7,
+    "selected_stereochemistry_mismatch_count": 0,
+    "same_pool_for_all_rules": true
+  },
+  "selection_changes": [
+    {
+      "index": 0,
+      "pair": "1a4g_ZMR_A_466__1f8c",
+      "group": 1,
+      "old": {
+        "medoid": 103,
+        "receptor_consensus": 101,
+        "routed": 101
+      },
+      "new": {
+        "medoid": 103,
+        "receptor_consensus": 109,
+        "routed": 109
+      }
+    },
+    {
+      "index": 2,
+      "pair": "1a4g_ZMR_A_466__1f8c",
+      "group": 3,
+      "old": {
+        "medoid": 163,
+        "receptor_consensus": 163,
+        "routed": 163
+      },
+      "new": {
+        "medoid": 157,
+        "receptor_consensus": 157,
+        "routed": 157
+      }
+    },
+    {
+      "index": 3,
+      "pair": "1a4g_ZMR_A_466__1f8c",
+      "group": 4,
+      "old": {
+        "medoid": 193,
+        "receptor_consensus": 179,
+        "routed": 179
+      },
+      "new": {
+        "medoid": 179,
+        "receptor_consensus": 179,
+        "routed": 179
+      }
+    },
+    {
+      "index": 4,
+      "pair": "1a4g_ZMR_A_466__1f8c",
+      "group": 5,
+      "old": {
+        "medoid": 227,
+        "receptor_consensus": 211,
+        "routed": 211
+      },
+      "new": {
+        "medoid": 211,
+        "receptor_consensus": 227,
+        "routed": 227
+      }
+    },
+    {
+      "index": 7,
+      "pair": "1a4g_ZMR_A_466__1f8e",
+      "group": 3,
+      "old": {
+        "medoid": 151,
+        "receptor_consensus": 151,
+        "routed": 151
+      },
+      "new": {
+        "medoid": 167,
+        "receptor_consensus": 167,
+        "routed": 167
+      }
+    },
+    {
+      "index": 187,
+      "pair": "3kba_WOW_A_1__3hq5",
+      "group": 3,
+      "old": {
+        "medoid": 163,
+        "receptor_consensus": 173,
+        "routed": 163
+      },
+      "new": {
+        "medoid": 163,
+        "receptor_consensus": 151,
+        "routed": 163
+      }
+    },
+    {
+      "index": 189,
+      "pair": "3kba_WOW_A_1__3hq5",
+      "group": 5,
+      "old": {
+        "medoid": 227,
+        "receptor_consensus": 227,
+        "routed": 227
+      },
+      "new": {
+        "medoid": 229,
+        "receptor_consensus": 229,
+        "routed": 229
+      }
+    }
+  ]
+}

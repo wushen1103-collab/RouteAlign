@@ -5,13 +5,14 @@ identifiers and measured values, without execution paths or machine metadata.
 
 | File | Rows | Meaning |
 |---|---:|---|
-| `endpoint_observations.csv` | 704 | Per-pair/group RouteAlign, LS-align and ROSHAMBO endpoints, plus one TEMPL endpoint per pair |
-| `family_effects.csv` | 21 | Three rerun comparators × seven overlapping strata; RMSD difference, interval, wins and corrected test |
+| `endpoint_observations.csv` | 1,409 | Per-pair/group selector, RouteAlign, LS-align and ROSHAMBO endpoints, plus one TEMPL endpoint per pair |
+| `family_effects.csv` | 43 | Comparator and selector effects over the prespecified strata; RMSD difference, interval, wins and corrected test |
 | `physical_checks.csv` | 57 | Nineteen PoseBusters checks × three five-group methods; failures and denominators |
 | `continuous_geometry.csv` | 2,640 | Selected-pose geometry diagnostics, retaining feature names, display scale and missing-value flags |
-| `repair_observations.csv` | 110 | Selected observations for which repair was triggered, with before/after diagnostic values |
+| `repair_observations.csv` | 106 | Selected observations for which repair was triggered, with before/after diagnostic values |
 | `atom_order_stress.csv` | 9 | Distinct atom-element sequences and mixed five-candidate groups in the ordering stress check |
 | `structural_cases.csv` | 4 | Case identity, selected seed/group, RMSD, physical pass, repair movement and coordinate checksums |
+| `same_candidate_ablation.csv` | 90 | Three selector rules on the same corrected candidate pool, split by similarity regime |
 
 `physical_checks.csv` gives counts before percentage formatting. Each method has
 220 selected outputs (44 pairs × five groups); the 19 checks are not independent

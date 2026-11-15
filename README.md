@@ -29,30 +29,39 @@ the regenerated numerical results against the frozen reference summaries and
 writes machine-readable JSON and CSV tables to `outputs/statistics/`. This is a
 statistics-level reproduction; the molecular pipeline below regenerates poses.
 
-For the 44-pair primary cohort, the frozen RouteAlign result is mean RMSD
-0.6877 ± 0.0176 Å, RMSD ≤ 2 Å success 99.55 ± 1.02%, physical-validity pass
-97.73 ± 0.00%, and joint success 97.27 ± 1.02%. The standard deviations are across
+For the 44-pair primary cohort after stereochemical correction, the frozen
+RouteAlign result is mean RMSD 0.6729 ± 0.0202 Å, RMSD ≤ 2 Å success
+99.55 ± 1.02%, physical-validity pass 97.73 ± 0.00%, and joint success
+97.27 ± 1.02%. The standard deviations are across
 five independent seed groups, not individual targets. TEMPL has one author-code
 run per pair; its uncertainty is not represented as five independent runs.
 
 ## Correspondence correction and selector evidence
 
-Candidate distances now minimize over full chemical graph mappings, including
-graph automorphisms and resonance-equivalent atoms, without fitting coordinates.
-On identical candidates, mean RMSD is 0.693556 A for uniform medoid, 0.687802 A
-for uniform receptor-consensus, and 0.687659 A for routing. The routed-minus-
-receptor difference has a 95% hierarchical-bootstrap interval of
-[-0.000621, 0.000199] A and Holm-adjusted p = 1.000 across six ablation tests.
-These controls do not establish an accuracy advantage from routing.
+Candidate distances minimize over complete chemical graph mappings, including
+graph automorphisms and resonance-equivalent atoms, without rigid fitting.
+Coordinate-inferred stereochemistry exposed 40 incorrect candidates in three
+pairs. Graph-guided local reflection corrected all 40 to the query graph, all 40
+passed the 19 physical checks, and no native pose was read during repair. Full
+reselection changed 7 of 220 saved outputs and left zero selected stereo
+mismatches. The before/after audit is frozen in
+`reference/stereochemistry_repair.json`.
 
-An input-graph audit additionally records 40 candidate and 10 selected-output
-stereochemical-annotation discrepancies across three pairs. They are retained
-in `reference/stereochemistry_audit.json`; the 19-check physical endpoint does
-not replace this audit. Molecular correctness requires this separate review.
+On the same 1,100 corrected candidates and the same compute budget, mean RMSD is
+0.679302 Å for uniform medoid, 0.673691 Å for uniform receptor-consensus and
+0.672946 Å for routing. The routed-minus-medoid 95% hierarchical-bootstrap
+interval is [-0.032526, 0.000418] Å (Holm-adjusted p = 0.700). In the 26
+low-similarity pairs, medoid is 0.001260 Å better than receptor-consensus; in the
+18 other pairs, receptor-consensus is 0.015536 Å better. The resulting
+regime-interaction estimate is -0.016796 Å. Its hierarchical family bootstrap
+interval excludes zero, while a family-cluster-robust regression gives p =
+0.210. The corrected evidence supports a directional strategy crossover and a
+small aggregate routing gain; it does not support the former large gain inferred
+from a whole-system comparison.
 
 Run `python -m routealign.ablation` for the selector-only statistical replay.
-The older `uniform_summary.json` describes a historical whole-system comparison,
-which is no longer used as evidence isolating final routing.
+The older `uniform_summary.json` describes a historical whole-system comparison
+and is retained only for provenance.
 
 ## Regenerate molecular predictions
 
