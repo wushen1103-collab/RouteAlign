@@ -186,3 +186,21 @@ recomputes the paired statistics. This is the active final-selector ablation.
 The historical uniform system also changed generation and cannot isolate routing.
 SDF chirality is audited separately; coordinate matching preserves connectivity
 and isotopes without changing or fitting coordinates. See the audit JSON.
+
+### Recompute all three selectors on molecular outputs
+
+After the generation and repair stages above, run the following stages. Candidate
+checks and score-only receptor evaluations are shared by all rules. Native ligand
+coordinates are opened only by the last endpoint stage.
+
+```bash
+python -m routealign.run --stage ablation_candidate --index 0
+python -m routealign.run --stage ablation_candidate --all --workers 1
+python -m routealign.run --stage ablation_select --all --workers 1
+python -m routealign.run --stage ablation_evaluate --all --workers 1
+```
+
+The five candidate hashes, full atom maps, all three saved poses and their endpoints
+are recorded per group under `runs/same_candidate_ablation/`. Single-task fault and
+timeout checks should precede any increase in workers. No molecular regeneration
+or repair is performed by these three stages.

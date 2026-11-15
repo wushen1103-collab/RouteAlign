@@ -14,6 +14,7 @@ from routealign import settings
 from routealign.control import execute, terminate_all
 
 STAGES = {
+    'ablation_candidate':1100, 'ablation_select':220, 'ablation_evaluate':220,
     'graft': 1100, 'repair': 1100, 'bounded_repair': 1100,
     'medoid_select': 220, 'medoid_evaluate': 220,
     'receptor_score': 450, 'receptor_repair': 450,
@@ -42,7 +43,7 @@ def main():
     required_rdkit = '2024.9.6' if args.stage == 'templ_generate' else '2023.9.6' if args.stage == 'roshambo_generate' else '2026.9.1'
     if version('rdkit') != required_rdkit:
         p.error(f'{args.stage} requires RDKit {required_rdkit}; use the matching generation or endpoint environment')
-    if args.stage in ['repair', 'receptor_repair', 'medoid_evaluate', 'receptor_evaluate', 'templ_evaluate', 'lsalign_evaluate', 'lsalign_validate', 'roshambo_evaluate', 'roshambo_validate'] and version('posebusters') != '0.5.1':
+    if args.stage in ['ablation_candidate', 'ablation_evaluate', 'repair', 'receptor_repair', 'medoid_evaluate', 'receptor_evaluate', 'templ_evaluate', 'lsalign_evaluate', 'lsalign_validate', 'roshambo_evaluate', 'roshambo_validate'] and version('posebusters') != '0.5.1':
         p.error('The reported endpoint protocol requires PoseBusters 0.5.1')
     cpus = sorted(os.sched_getaffinity(0))
     cap = max(1, len(cpus) - 30)
