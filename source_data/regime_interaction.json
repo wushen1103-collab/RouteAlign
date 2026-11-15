@@ -1,0 +1,25 @@
+{
+  "definition": "mean(medoid RMSD - receptor-consensus RMSD) in low similarity minus the same contrast in other similarity",
+  "n_pairs_low": 26,
+  "n_pairs_other": 18,
+  "low_medoid_minus_rc_A": -0.0012602313041939392,
+  "other_medoid_minus_rc_A": 0.015536191248969445,
+  "interaction_A": -0.016796422553163385,
+  "family_cluster_robust_regression": {
+    "coefficient_low_similarity_A": -0.016796422553163392,
+    "CR1_standard_error_A": 0.013031202649319557,
+    "t": -1.288938788319775,
+    "df": 24,
+    "two_sided_p": 0.2097053226618906
+  },
+  "hierarchical_family_bootstrap": {
+    "replicates": 50000,
+    "seed": 20261115,
+    "ci95_A": [
+      -0.049446252343708544,
+      -0.00019765395089367437
+    ],
+    "probability_interaction_ge_0": 0.01856
+  },
+  "interpretation": "A negative interaction means the medoid becomes relatively more favorable below the fixed 0.50 Morgan-Tanimoto boundary."
+}

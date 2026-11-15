@@ -1,0 +1,519 @@
+{
+  "version": "1.0",
+  "units": {
+    "rmsd_A": "angstrom, no ligand superposition",
+    "movement_A": "angstrom",
+    "*_pct_*": "percent",
+    "pair_win_rate": "fraction"
+  },
+  "empty_cells": "Unavailable or inapplicable, never a measured zero",
+  "replicate_unit": "A group of five candidate seeds, with one retained pose per pair",
+  "standard_deviation": "Sample SD across the five group summaries",
+  "data": [
+    {
+      "file": "cohort.csv",
+      "rows": 44,
+      "columns": [
+        "pair",
+        "family",
+        "template_id",
+        "query_id",
+        "query_heavy_atoms",
+        "template_heavy_atoms",
+        "mcs_atoms",
+        "query_mcs_fraction",
+        "morgan_tanimoto",
+        "query_rotatable_bonds",
+        "hard_low_2d",
+        "hard_scaffold",
+        "hard_flex",
+        "query_input_smiles",
+        "template_input_smiles",
+        "query_sdf_sha256",
+        "template_sdf_sha256"
+      ],
+      "use": "Table S2 and all analyses: 44 pairs, 25 template families"
+    },
+    {
+      "file": "eligibility.csv",
+      "rows": 369,
+      "columns": [
+        "family",
+        "template_id",
+        "query_id",
+        "template_sdf_sha256",
+        "query_sdf_sha256",
+        "template_graph_sha256",
+        "query_graph_sha256",
+        "template_smiles",
+        "query_smiles",
+        "template_heavy_atoms",
+        "query_heavy_atoms",
+        "mcs_atoms",
+        "query_mcs_fraction",
+        "template_mcs_fraction",
+        "query_rotatable_bonds",
+        "morgan_tanimoto",
+        "query_murcko",
+        "template_murcko",
+        "different_murcko_scaffold",
+        "primary_eligible",
+        "hard_low_2d_similarity",
+        "hard_scaffold_change",
+        "hard_upper_flexibility_band",
+        "mcs_timeout_seconds",
+        "stereo_policy",
+        "target_coordinate_numeric_fields_parsed",
+        "target_coordinate_numeric_fields_retained",
+        "target_pose_metric_read",
+        "mcs_timed_out"
+      ],
+      "use": "All 369 source rows, including 44 eligible pairs and the unresolved MCS row"
+    },
+    {
+      "file": "seed_groups.csv",
+      "rows": 5,
+      "columns": [
+        "repeat_group",
+        "seed_1",
+        "seed_2",
+        "seed_3",
+        "seed_4",
+        "seed_5",
+        "pairs"
+      ],
+      "use": "The five disjoint groups of five seeds"
+    },
+    {
+      "file": "endpoints.csv",
+      "rows": 704,
+      "columns": [
+        "pair",
+        "family",
+        "method",
+        "repeat_group",
+        "rmsd_A",
+        "success_2A",
+        "physical_pass",
+        "joint_success",
+        "source_type"
+      ],
+      "use": "704 current observations: 220 each for RouteAlign/LS-align/ROSHAMBO and 44 single-output TEMPL reruns"
+    },
+    {
+      "file": "selector_endpoints.csv",
+      "rows": 660,
+      "columns": [
+        "pair",
+        "family",
+        "repeat_group",
+        "rule",
+        "low_similarity",
+        "candidate_index",
+        "seed",
+        "pose_sha256",
+        "rmsd_A",
+        "success_2A",
+        "physical_pass",
+        "joint_success"
+      ],
+      "use": "All 660 choices in the identical-candidate three-rule control"
+    },
+    {
+      "file": "candidate_groups.json.gz",
+      "use": "All 220 corrected five-candidate groups: coordinates are represented by hashes, distances and scores"
+    },
+    {
+      "file": "table_1.csv",
+      "rows": 4,
+      "columns": [
+        "stratum",
+        "pairs",
+        "families",
+        "method",
+        "replicate_groups",
+        "rmsd_A_mean",
+        "rmsd_A_sd",
+        "success_pct_mean",
+        "success_pct_sd",
+        "physical_pass_pct_mean",
+        "physical_pass_pct_sd",
+        "joint_success_pct_mean",
+        "joint_success_pct_sd"
+      ],
+      "use": "Table 1: corrected primary-cohort means and sample SDs"
+    },
+    {
+      "file": "table_s3_strata.csv",
+      "rows": 28,
+      "columns": [
+        "stratum",
+        "pairs",
+        "families",
+        "method",
+        "replicate_groups",
+        "rmsd_A_mean",
+        "rmsd_A_sd",
+        "success_pct_mean",
+        "success_pct_sd",
+        "physical_pass_pct_mean",
+        "physical_pass_pct_sd",
+        "joint_success_pct_mean",
+        "joint_success_pct_sd"
+      ],
+      "use": "Table S3: seven overlapping strata, with all matched methods retained"
+    },
+    {
+      "file": "table_s4_statistics.csv",
+      "rows": 21,
+      "columns": [
+        "stratum",
+        "comparator",
+        "pairs",
+        "families",
+        "delta_rmsd_A",
+        "ci95_low_A",
+        "ci95_high_A",
+        "pair_win_rate",
+        "one_sided_p",
+        "holm_p_35_tests"
+      ],
+      "use": "Table S4: 21 comparisons, family-aware tests and pointwise intervals"
+    },
+    {
+      "file": "table_s8_ablation.csv",
+      "rows": 9,
+      "columns": [
+        "stratum",
+        "rule",
+        "pairs",
+        "replicate_groups",
+        "rmsd_A_mean",
+        "rmsd_A_sd",
+        "success_pct_mean",
+        "success_pct_sd",
+        "physical_pass_pct_mean",
+        "physical_pass_pct_sd",
+        "joint_success_pct_mean",
+        "joint_success_pct_sd"
+      ],
+      "use": "Table S8: same-pool, same-budget selector control in both regimes"
+    },
+    {
+      "file": "regime_interaction.json",
+      "use": "Regime crossover estimates, bootstrap interval and CR1 regression"
+    },
+    {
+      "file": "protocol.json",
+      "use": "Frozen seed schedules, input strata and selection/repair settings"
+    },
+    {
+      "file": "physical_checks.csv",
+      "rows": 660,
+      "columns": [
+        "pair",
+        "family",
+        "group",
+        "method",
+        "physical_pass",
+        "all_atoms_connected",
+        "aromatic_ring_flatness",
+        "bond_angles",
+        "bond_lengths",
+        "double_bond_flatness",
+        "inchi_convertible",
+        "internal_energy",
+        "internal_steric_clash",
+        "minimum_distance_to_inorganic_cofactors",
+        "minimum_distance_to_organic_cofactors",
+        "minimum_distance_to_protein",
+        "minimum_distance_to_waters",
+        "non-aromatic_ring_non-flatness",
+        "protein-ligand_maximum_distance",
+        "sanitization",
+        "volume_overlap_with_inorganic_cofactors",
+        "volume_overlap_with_organic_cofactors",
+        "volume_overlap_with_protein",
+        "volume_overlap_with_waters"
+      ],
+      "use": "All 19 checks for 660 matched-method selected observations"
+    },
+    {
+      "file": "figure_4.csv",
+      "rows": 57,
+      "columns": [
+        "method",
+        "check",
+        "failed",
+        "evaluated",
+        "failure_pct"
+      ],
+      "use": "Fig. 4: failures for each enabled physical check"
+    },
+    {
+      "file": "figure_2.csv",
+      "rows": 132,
+      "columns": [
+        "pair",
+        "family",
+        "baseline",
+        "baseline_pair_mean_rmsd_A",
+        "RouteAlign_pair_mean_rmsd_A",
+        "low_2D"
+      ],
+      "use": "Fig. 2: paired mean errors against each matched rerun"
+    },
+    {
+      "file": "figure_3.csv",
+      "rows": 21,
+      "columns": [
+        "stratum",
+        "baseline",
+        "delta_rmsd_A",
+        "ci95_low",
+        "ci95_high",
+        "n_pairs",
+        "n_families"
+      ],
+      "use": "Fig. 3: stratum effects and intervals"
+    },
+    {
+      "file": "figure_5.csv",
+      "rows": 90,
+      "columns": [
+        "stratum",
+        "n_pairs",
+        "rule",
+        "metric",
+        "group",
+        "value"
+      ],
+      "use": "Fig. 5: group-level same-candidate selector values"
+    },
+    {
+      "file": "figure_6.csv",
+      "rows": 4,
+      "columns": [
+        "panel",
+        "pair",
+        "group",
+        "selection_rule",
+        "rmsd_A",
+        "frozen_PB_pass",
+        "failed_checks",
+        "minimum_relative_protein_distance",
+        "protein_overlap_fraction",
+        "coordinates_changed",
+        "render_sha256"
+      ],
+      "use": "Fig. 6: case-specific coordinate diagnostics"
+    },
+    {
+      "file": "figure_s1.csv",
+      "rows": 44,
+      "columns": [
+        "pair",
+        "mcs",
+        "tanimoto",
+        "rotatable_bonds",
+        "scaffold_change"
+      ],
+      "use": "Fig. S1: cohort descriptors"
+    },
+    {
+      "file": "figure_s2.csv",
+      "rows": 352,
+      "columns": [
+        "panel",
+        "pair",
+        "method",
+        "pair_mean_rmsd_A"
+      ],
+      "use": "Fig. S2: pair-mean error-distribution observations"
+    },
+    {
+      "file": "figure_s3.csv",
+      "rows": 2640,
+      "columns": [
+        "pair",
+        "group",
+        "method",
+        "feature",
+        "value",
+        "display_scale",
+        "NA_excluded"
+      ],
+      "use": "Fig. S3: frozen coordinate-specific continuous diagnostics"
+    },
+    {
+      "file": "figure_s4.csv",
+      "rows": 106,
+      "columns": [
+        "pair",
+        "group",
+        "feature",
+        "before",
+        "after",
+        "accepted",
+        "movement_A"
+      ],
+      "use": "Fig. S4: frozen triggered-repair diagnostic observations"
+    },
+    {
+      "file": "figure_s5.csv",
+      "rows": 176,
+      "columns": [
+        "group",
+        "low_2D",
+        "pair",
+        "TEMPL_rmsd_A",
+        "RouteAlign_rmsd_A"
+      ],
+      "use": "Fig. S5: confirmation seed groups 2-5"
+    },
+    {
+      "file": "figure_s6.csv",
+      "rows": 4,
+      "columns": [
+        "panel",
+        "pair",
+        "template_input_smiles",
+        "query_input_smiles",
+        "template_match",
+        "query_match",
+        "mcs_atoms",
+        "mapping_metadata_sha256"
+      ],
+      "use": "Fig. S6: case molecular identities and common-core atom mappings"
+    },
+    {
+      "file": "figure_s7.csv",
+      "rows": 4,
+      "columns": [
+        "panel",
+        "pair",
+        "group",
+        "selection_rule",
+        "rmsd_A",
+        "frozen_PB_pass",
+        "failed_checks",
+        "minimum_relative_protein_distance",
+        "protein_overlap_fraction",
+        "coordinates_changed",
+        "render_sha256"
+      ],
+      "use": "Fig. S7: difficult-case coordinate diagnostics"
+    },
+    {
+      "file": "table_s7_cases.csv",
+      "rows": 4,
+      "columns": [
+        "panel",
+        "role",
+        "pair",
+        "group",
+        "selected_seed",
+        "RMSD_A",
+        "TEMPL_RMSD_A",
+        "PB",
+        "movement_A",
+        "prediction_sha256",
+        "native_sha256",
+        "endpoint_sha256"
+      ],
+      "use": "Table S7: structural measurements and coordinate hashes, without execution paths"
+    },
+    {
+      "file": "atom_order_audit.csv",
+      "rows": 9,
+      "columns": [
+        "pair",
+        "route",
+        "distinct_element_sequences",
+        "mixed_groups",
+        "candidate_files"
+      ],
+      "use": "Nine mixed-element-order pairs"
+    },
+    {
+      "file": "repair_events.csv",
+      "rows": 53,
+      "columns": [
+        "pair",
+        "group",
+        "seed",
+        "repair_triggered",
+        "movement_A",
+        "PB_pass",
+        "rmsd_A",
+        "pre_failed"
+      ],
+      "use": "The 53 triggered physical-repair observations underlying the frozen diagnostic view"
+    },
+    {
+      "file": "graph_correspondence_changes.csv",
+      "rows": 65,
+      "columns": [
+        "pair",
+        "group",
+        "old_seed",
+        "new_seed",
+        "old_rmsd",
+        "new_rmsd",
+        "old_joint",
+        "new_joint"
+      ],
+      "use": "The 65 selection changes caused by chemical correspondence before stereochemistry correction"
+    },
+    {
+      "file": "stereochemistry_correction.json",
+      "use": "Forty corrected candidates, seven later selection changes and zero final selected mismatches"
+    },
+    {
+      "file": "table_s1_methods.csv",
+      "rows": 11,
+      "columns": [
+        "method_or_family",
+        "technical_route",
+        "evidence",
+        "use"
+      ],
+      "use": "Table S1"
+    },
+    {
+      "file": "table_s5_parameters.csv",
+      "rows": 22,
+      "columns": [
+        "component",
+        "parameter",
+        "value"
+      ],
+      "use": "Table S5"
+    },
+    {
+      "file": "table_s6_atom_order.csv",
+      "rows": 9,
+      "columns": [
+        "pair",
+        "mixed_groups",
+        "changed_groups"
+      ],
+      "use": "Table S6"
+    },
+    {
+      "file": "diagnostic_pose_hashes.csv",
+      "rows": 660,
+      "columns": [
+        "pair",
+        "repeat_group",
+        "method",
+        "diagnostic_pose_sha256",
+        "protein_sha256",
+        "native_sha256",
+        "final_selected_candidate_sha256",
+        "byte_identical_to_final_candidate"
+      ],
+      "use": "Identity ledger for frozen coordinate diagnostics; byte identity is not coordinate fitting"
+    }
+  ]
+}

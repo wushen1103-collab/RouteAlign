@@ -1,5 +1,14 @@
 # Supporting numerical data
 
+The canonical corrected figure/table inputs are now in
+[`source_data/`](../source_data/README.md), version `source-data-v1.0`.
+That snapshot supplies the explicit display-number mapping, units, regenerated
+current endpoint tables and an independently downloadable archive. Verify it with
+`python -m routealign.source_data` or the verifier bundled in the ZIP.
+The `reference/supporting/` files below retain the statistical/diagnostic export
+history used by existing reproduction commands; use the versioned Source Data
+directory when locating values for the final figures and tables.
+
 All files below are in `reference/supporting/`. They contain scientific
 identifiers and measured values, without execution paths or machine metadata.
 

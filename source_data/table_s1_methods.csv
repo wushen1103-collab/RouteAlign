@@ -1,0 +1,12 @@
+method_or_family,technical_route,evidence,use
+TEMPL,Template embedding,Author code,RMSD ranking
+LS-align,Structural alignment,Official program,RMSD/PB/joint
+ROSHAMBO,Shape/pharmacophore overlay,Author code,RMSD/PB/joint
+AutoDock Vina,Pocket docking,Original paper,Context only
+rDock,Pocket docking,Original paper,Context only
+FitDock,Template fitting/refinement,Original paper,Context only
+FMA / FMA-PO / FMA-PO+,Template-conditioned flow matching,Original paper,Context only
+DiffDock,Learned docking,Framework reference,Context only
+HarmonicFlow,Learned docking,Framework reference,Context only
+FIGRDock,Learned docking,Framework reference,Context only
+"FEgrow, DBX2","Core constraints, pose ensembles",Mechanism reference,Conceptual only

@@ -1,0 +1,23 @@
+component,parameter,value
+Eligibility,Minimum query MCS coverage,0.70
+Eligibility,Maximum rotatable bonds,5
+Graph,Morgan radius / bits,2/2048
+MCS,Eligibility / generation timeout (s),15/60
+Grafting,Mapping-pair cap / attempts,32/4
+Embedding,Maximum iterations,1000
+Minimization,Maximum iterations,500
+Fallback,Schedule limit (s),900
+Routing,Low-2D Morgan threshold,0.50
+Repair,Trust radius (A),1.25
+Repair,External-call timeout (s),240
+Graph maps,Maximum full-atom mappings,100000
+Resonance,Maximum forms per molecule,10000
+Consensus,Standardized-distance weight,5
+Zero variance,Candidate z-score,0
+Replication,Groups / seeds per group,5/5
+ROSHAMBO,Seeds / requested conformers,5/10
+Uncertainty,Bootstrap resamples,20000
+Endpoint,RDKit version,2026.09.1
+ROSHAMBO,RDKit version,2023.09.6
+Endpoint,PoseBusters version,0.5.1
+TEMPL,Author-code snapshot,727fd30

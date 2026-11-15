@@ -9,6 +9,18 @@ low-similarity inputs to candidate-medoid selection and other inputs to
 receptor-score/consensus selection. The selected coordinates are saved before
 native-pose RMSD is evaluated.
 
+## Source Data
+
+The corrected figure and table inputs are available as [Source Data version 1.0](https://github.com/wushen1103-collab/RouteAlign/tree/source-data-v1.0/source_data).
+[Download the compact ZIP](https://raw.githubusercontent.com/wushen1103-collab/RouteAlign/source-data-v1.0/source_data/RouteAlign_Source_Data.zip),
+or browse the expanded CSV files, data dictionary and SHA-256 checksums in that directory.
+The archive includes its own standard-library verifier (`python verify_source_data.py`).
+From a repository checkout, use `python -m routealign.source_data`.
+It verifies 704 matched-method observations, all 660 same-candidate selector outcomes,
+the primary table and figure values with one CPU and no GPU or dataset download.
+Scientific units and the distinction between frozen coordinate diagnostics and final
+selected endpoints are documented in the data dictionary and Source Data README.
+
 ## Reproduce the reported numbers
 
 The small frozen observation archive includes all 44 pairs, 25 template families,
