@@ -11,8 +11,8 @@ native-pose RMSD is evaluated.
 
 ## Source Data
 
-The corrected figure and table inputs are available as [Source Data version 1.0](https://github.com/wushen1103-collab/RouteAlign/tree/source-data-v1.0/source_data).
-[Download the compact ZIP](https://raw.githubusercontent.com/wushen1103-collab/RouteAlign/source-data-v1.0/source_data/RouteAlign_Source_Data.zip),
+The corrected figure and table inputs are available as [Source Data version 1.0.1](https://github.com/wushen1103-collab/RouteAlign/tree/source-data-v1.0.1/source_data).
+[Download the compact ZIP](https://raw.githubusercontent.com/wushen1103-collab/RouteAlign/source-data-v1.0.1/source_data/RouteAlign_Source_Data.zip),
 or browse the expanded CSV files, data dictionary and SHA-256 checksums in that directory.
 The archive includes its own standard-library verifier (`python verify_source_data.py`).
 From a repository checkout, use `python -m routealign.source_data`.

@@ -1,7 +1,7 @@
 # Supporting numerical data
 
 The canonical corrected figure/table inputs are now in
-[`source_data/`](../source_data/README.md), version `source-data-v1.0`.
+[`source_data/`](../source_data/README.md), version `source-data-v1.0.1`.
 That snapshot supplies the explicit display-number mapping, units, regenerated
 current endpoint tables and an independently downloadable archive. Verify it with
 `python -m routealign.source_data` or the verifier bundled in the ZIP.

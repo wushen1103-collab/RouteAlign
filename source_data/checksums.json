@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.0.1",
   "files": {
     "atom_order_audit.csv": {
       "sha256": "54108ec23ca7100e44ea2632cf7393dd649fbf8ab159344c99d22876b0f7cf09",
@@ -14,8 +14,8 @@
       "bytes": 15138
     },
     "data_dictionary.json": {
-      "sha256": "9559ed6b4c7bf339eb6fddc065400a6686233517f8290425f2010f9b7276f2d5",
-      "bytes": 12726
+      "sha256": "39e5dd3fb08f1a4889a500b760ccf704a9653690dd4d9a03e671c27a3b78cf5a",
+      "bytes": 12728
     },
     "diagnostic_pose_hashes.csv": {
       "sha256": "19fb12d2f313911f318ca58dd6319ebc62016142c08ec2cb25f7ad1cf4e09c11",
@@ -94,8 +94,8 @@
       "bytes": 23367
     },
     "README.md": {
-      "sha256": "613f03e026dc7fa578215175055b26345b03dbf96b3a608acb226442f1c88de8",
-      "bytes": 4123
+      "sha256": "6742a23439ab80df999ab93c651c4f513a3526a56ac09720243a006568d21346",
+      "bytes": 4165
     },
     "regime_interaction.json": {
       "sha256": "212e350485bf0d88b95aef360c9c23f7ba0d69e2b635854c3092c1f9e480c289",

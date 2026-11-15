@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.0.1",
   "units": {
     "rmsd_A": "angstrom, no ligand superposition",
     "movement_A": "angstrom",

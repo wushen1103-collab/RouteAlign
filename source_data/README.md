@@ -1,14 +1,14 @@
 # RouteAlign Source Data
 
-Version **1.0** contains the corrected numerical evidence for 44 molecular pairs,
+Version **1.0.1** contains the corrected numerical evidence for 44 molecular pairs,
 25 template families and five disjoint groups of five candidate seeds. It is
 aligned with the graph- and stereochemistry-corrected workflow: mean RMSD
 0.6729458703064845 A and joint success 97.27272727272729%.
 
 ## Download and verify
 
-- Browse the versioned files: `https://github.com/wushen1103-collab/RouteAlign/tree/source-data-v1.0/source_data`
-- Download the single archive: `https://raw.githubusercontent.com/wushen1103-collab/RouteAlign/source-data-v1.0/source_data/RouteAlign_Source_Data.zip`
+- Browse the versioned files: `https://github.com/wushen1103-collab/RouteAlign/tree/source-data-v1.0.1/source_data`
+- Download the single archive: `https://raw.githubusercontent.com/wushen1103-collab/RouteAlign/source-data-v1.0.1/source_data/RouteAlign_Source_Data.zip`
 - Verify after cloning: `python -m routealign.source_data`
 - Verify an extracted archive: `python -m routealign.source_data --directory /path/to/extracted-data`
 - Or run the verifier bundled in the extracted archive: `python verify_source_data.py`.
@@ -22,7 +22,7 @@ one CPU and no GPU, dataset download, docking or geometry optimization.
 
 | Display or evidence | Data |
 |---|---|
-| Fig. 1 | Workflow schematic; molecular case identities in `figure_s6.csv` |
+| Fig. 1 | Workflow schematic; its example input pair (template 3ny8, query 5a8e) is identified in `cohort.csv` |
 | Figs. 2-6 | `figure_2.csv` through `figure_6.csv` |
 | Figs. S1-S7 | `figure_s1.csv` through `figure_s7.csv` |
 | Table 1 | `table_1.csv` |
